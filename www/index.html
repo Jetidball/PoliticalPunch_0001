@@ -36,7 +36,7 @@
         <meta name="msapplication-tap-highlight" content="no">
         <link rel="stylesheet" href=" https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
-
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
         <!--<script src="jquery-2.1.4.js"></script>-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -46,20 +46,30 @@
 
         <title>Political Punch</title>
     </head>
-    <body style="background:#000">c81b4ed1d43cc11d9a34e9e9f08ec4a927139119
+    <body style="background:#000">
 
     <div class="header">
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+        <!--<div id="mySidenav" class="sidenav">-->
+            <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+            <!--<a href="#">About</a>-->
+            <!--<a href="#">Services</a>-->
+            <!--<a href="#">Clients</a>-->
+            <!--<a href="#">Contact</a>-->
+        <!--</div>-->
+        <!--<span style="font-size:3vh;cursor:pointer" onclick="openNav()">&#9776; </span>-->
+        <div class="topnav">
+            <a href="#home" class="active">Logo</a>
+            <div id="myLinks">
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        <span style="font-size:1vh;cursor:pointer" onclick="openNav()">&#9776; </span>
         <div class="banner">
-        <h1> Pick a politician to punch!</h1>
-
+            <h1> Pick a politician to punch!</h1>
             <h2 style="margin:0px;">CHOOSE YOUR VICTIM</h2>
         </div>
     </div>
@@ -104,13 +114,23 @@
         </div>
 
     </div>
-    <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-        }
+    <!--<script>-->
+        <!--function openNav() {-->
+          <!--document.getElementById("mySidenav").style.width = "250px";-->
+        <!--}-->
 
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
+        <!--function closeNav() {-->
+          <!--document.getElementById("mySidenav").style.width = "0";-->
+        <!--}-->
+    <!--</script>-->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
         }
     </script>
     </body>
