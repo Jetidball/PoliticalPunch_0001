@@ -20,6 +20,131 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
+/*  Fonts */
+
+ @font-face {
+ font-family: HaleysHand;
+ src: url(../webfonts/HaleysHand-Regular.ttf);
+ }
+
+ @font-face {
+ font-family: HaleysHand;
+ src: url(../webfonts/HaleysHand-Regular.ttf);
+ }
+ @font-face {
+ font-family: alienation-Outline;
+ src: url(../webfonts/alienation-Outline.ttf);
+ }
+ @font-face {
+ font-family: BrusselsTitlingCaps-Regular;
+ src: url(../webfonts/BrusselsTitlingCaps-Regular.ttf);
+ }
+ @font-face {
+ font-family: Captain-Howdy-Regular;
+ src: url(../webfonts/Captain-Howdy-Regular.ttf);
+ }
+ @font-face {
+ font-family: Caveman-Regular;
+ src: url(../webfonts/Caveman-Regular.ttf);
+ }
+ @font-face {
+ font-family: CYBEI__;
+ src: url(../webfonts/CYBEI__.ttf);
+ }
+ @font-face {
+ font-family: KrazyKool-Normal;
+ src: url(../webfonts/KrazyKool-Normal.ttf);
+ }
+ @font-face {
+ font-family: QuestsHand-Regular;
+ src: url(../webfonts/QuestsHand-Regular.ttf);
+ }
+ @font-face {
+ font-family: RachelsHand-Regular;
+ src: url(../webfonts/RachelsHand-Regular.ttf);
+ }
+ @font-face {
+ font-family: TM-First-Fleet-Normal;
+ src: url(../webfonts/TM-First-Fleet-Normal.ttf);
+ }
+ @font-face {
+ font-family: JackiesHand-Regular;
+ src: url(../webfonts/JackiesHand-Regular.ttf);
+ }
+
+
+/*side nav 2 */
+
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(0,255,0,0.1);
+  position: fixed;
+  z-index:2;
+}
+
+.topnav #myLinks {
+  display: none;
+  z-index:2;
+  background-color:black;
+  position:fixed;
+}
+
+.topnav a {
+  color: white;
+  padding: 1vw;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  overflow:hidden;
+
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: fixed;
+  text-align:center;
+  left: 0;
+  top: 0;
+  width:10vw;
+
+}
+
+.topnav a:hover {
+  background-color: rgba(255,50,30,0.1);
+  color: rgba(0,255,0,.8);
+}
+
+.active {
+  background-color: rgba(0,50,0,0.1);
+  right:0;
+  color: white;
+  overflow:hidden;
+
+
+  margin:0;
+}
+
+.active span{
+  background-color: rgba(0,50,0,0.1);
+  right:0;
+  top:0;
+  padding-right:1vw;
+  position:fixed;
+  font-size:10vw;
+  margin-top:-1.5vh;
+  color:rgba(209, 209, 224, 1)
+
+}
+/* Side Nav Menu */
+
+
+/* Index.html and all */
+
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: text;             /* prevent webkit from resizing text to fit */
@@ -32,10 +157,15 @@ body {
     width:100vw;
     margin:0px;
     padding:0px;
-    overflow: hidden;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow:hidden;
     /* Padding to avoid the "unsafe" areas behind notches in the screen */
     padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-right, 0px);
     text-transform:uppercase;
+    position:fixed;
 }
 
 .container {
@@ -50,31 +180,24 @@ body {
     background:url(../img/bluetexture.jpg) repeat  center;
     background-color:rgb(9, 23, 152);
     color:#b2eaed;
-    border:1px solid black;
+    border-bottom:1px solid black;
                  /* position in the center of the screen */
     /*top:90vh;*/
                     /* text area height */
-    width:100%;
+    width:100vw;
     height:15vh;
     margin:0;
     margin-bottom:0px;
-    padding-top:20px;
+    padding-top:0px;
     color:pink;
     text-shadow: 2px 2px #000;
+
              /* text area width */
     /* text-align:center; */
     /* padding:50px 50px 50px 500px;     /* image height is 200px (bottom 20px are overlapped with text) */  /* offset vertical: half of image height and text area height */ */
                                    /* offset horizontal: half of text area width */
 }
-.banner {
-margin:0;
-margin-top:3vh;
-background-color:rgba(255,23,32,.8);
-color:white;
-text-align:center;
-height:5vh;
-border-bottom:5px solid red;
-}
+
 .footer {
     /*background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
     background-color:rgb(9, 23, 152);
@@ -93,15 +216,83 @@ border-bottom:5px solid red;
     /* padding:50px 50px 50px 500px;     /* image height is 200px (bottom 20px are overlapped with text) */  /* offset vertical: half of image height and text area height */ */
                                    /* offset horizontal: half of text area width */
 }
+
+
+
+.apptitle {
+     margin:0;
+     bottom:0;
+     width:100vw;
+     margin-bottom: 4vh;
+     height:6vh;
+     position:absolute;
+     background-color:rgba(255,23,32,.1);
+     color:white;
+     text-align:center;
+     z-index: 1;
+     font-size:36px;
+
+ }
+ .apptitle h1 {
+      font-family: CYBEI__;
+      font-size:8vw;
+
+ }
+
+
+ .banner {
+      margin:0;
+      bottom:0;
+      width:100vw;
+      position:absolute;
+      background-color:rgba(255,23,32,.8);
+      color:white;
+      text-align:center;
+      height:4vh;
+      border-bottom:2px solid red;
+      z-index: 1;
+  }
+
 #DButton {
 
-
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 top:20%;
 height:11vh;
 width:25vw;
 
+}
+.indexbutton {
 
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 
+}
+
+.indexbutton:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.indexbutton:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
 }
 
 /* #img1 {
@@ -111,38 +302,55 @@ width:25vw;
     width:100%;
     height:100%;/* 170px x 200px */
 
-#row {
+#row2 {
   width:100vw;
+  height:70vh;
   background-color: rgba(255,0,255,1);
+  overflow:hidden;
 }
 
-#Dem {
+.Dem {
   width:50vw;
   height:100%;
+  flex: 1 1 auto;
+  background:url(../img/Bernie.png) no-repeat  center;
+  background-position: center center;
+  background-color: rgba(0,0,255,.6);
+  background-size:cover;/* 170px x 200px */
+
+
+}
+
+.Rep{
+  width:50vw;
+  height:100%;
+  flex: 1 1 auto;
+  background:url(../img/Trumpu.png) no-repeat  center;
+  background-position: center center;
+  background-size:cover;/* 170px x 200px */
+
 
 }
 
 #col1 {
-  background:url(../img/Bernie.png) no-repeat  center;
-  background-position: center center;
-  background-size:cover;/* 170px x 200px */
-  background-color: rgba(0,0,255,.6);
+
+  background: repeating-linear-gradient(rgba(113, 140, 237, 1), rgb(117, 58, 136, 1) 2%, #ff5e7c 1%);
   border-style: none;
   width:50vw;
   height:70vh;
   padding:0px;
+  overflow:hidden;
 
 }
 
 #col2 {
-  background:url(../img/Trumpu.png) no-repeat  center;
-  background-position: center center;
-  background-size:cover;/* 170px x 200px */
-  background-color: rgba(255,0,0,.6);
+   background: repeating-linear-gradient(rgba(237,50,53,1), rgba(186,58,41,1) 1%, rgba(255, 34, 14, 1) 2%);
+   background-color: rgba(255,0,0,.6);
    border-style: none;
    width:50vw;
    height:70vh;
    padding:0px;
+   overflow:hidden;
 
 
 }
@@ -161,7 +369,8 @@ width:25vw;
   background-size:contain;/* 170px x 200px */
   background-color: rgba(255,0,0,0.6);
   padding:0px;
-  width:2.5vh;
+  width:1.5vh;
+  overflow:hidden;
 
 
 
@@ -173,13 +382,7 @@ width:25vw;
   border-style: none;
   height:70vh;
   width:1.25vh;
-
-}
-
-
-#Rep{
-  width:50vw;
-  height:100%;
+  overflow:hidden;
 
 }
 
@@ -206,7 +409,9 @@ width:25vw;
 }
 
 .content {
- width:100%;
+ width:100vw;
+ height:70vh;
+ overflow-:hidden;
 
 }
 
@@ -215,6 +420,7 @@ width:25vw;
   width:40vw;
   height:20vh;
   padding:100%;
+
 
 }
 
@@ -249,13 +455,14 @@ width:25vw;
 }
 
 h1 {
-    font-size:6vw;
+    font-size:7vw;
     font-weight:bold;
     margin:0;
-    overflow:visible;
+    overflow:hidden;
     padding:0;
     text-align:center;
     font-weight: bold;
+    font-family: KrazyKool-Normal;
 }
 
 .event {
@@ -303,10 +510,38 @@ h1 {
      background-size:cover;/* 170px x 200px */
      border-style: groove;
      width:100vw;
-     height:80vh;
+     height:85vh;
+
+}
+#DemocratPage {
 
 }
 
+.DemocratPage .topnav {
+top:0;
+
+}
+.DemocratPage .apptitle {
+margin-bottom:0vh;
+height:4vh;
+width:100vw;
+position:absolute;
+bottom:0;
+
+}
+.DemocratPage .header {
+height:10vh;
+position:relative;
+color:black;
+background:url(../img/Elephant.jpg);
+}
+.DemocratPage .footer {
+height:5vh;
+bottom:0;
+position:absolute;
+color:black;
+background:url(../img/Elephant.jpg);
+}
 /* Republican.html */
 
 .Republicans {
@@ -315,6 +550,82 @@ h1 {
      background-size:cover;/* 170px x 200px */
      border-style: groove;
      width:100vw;
-     height:80vh;
+     height:85vh;
 
+}
+
+#RepublicanPage {
+
+
+}
+
+.RepublicanPage .topnav {
+top:0;
+
+}
+.RepublicanPage .apptitle {
+margin-bottom:0vh;
+height:4vh;
+width:100vw;
+position:absolute;
+bottom:0;
+
+}
+.RepublicanPage .header {
+height:10vh;
+position:relative;
+color:black;
+background:url(../img/Elephant.jpg);
+}
+.RepublicanPage .footer {
+height:5vh;
+bottom:0;
+position:absolute;
+color:black;
+background:url(../img/Elephant.jpg);
+}
+
+/* Settings.html */
+#settingsrow {
+width:100%;
+height:70vh;
+margin:0;
+font-size: 7vw;
+background-image: radial-gradient(rgba(3,42,111,.1), rgba(34,44,2,.5));
+}
+#settingscontent {
+background-image: linear-gradient(red, yellow);
+}
+#settingsbutton {
+  margin-top: 10vh;
+  width: 40vw;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 10px 10px 5px #bbbbbb;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+#settingsbutton:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#settingsbutton:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
 }

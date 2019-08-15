@@ -1,32 +1,76 @@
 <!DOCTYPE html>
-<!--<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">-->
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
-<meta name="format-detection" content="telephone=no">
-<meta name="msapplication-tap-highlight" content="no">
-<link rel="stylesheet" href=" https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/index.css">
+<html>
+<head>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+    <!--<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">-->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href=" https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/v4-shims.min.css">
+    <link rel="stylesheet" type="text/css" href="css/regular.min.css">
 
 
-<script src="jquery-2.1.4.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!--<script src="jquery-2.1.4.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>-->
 
 
-<title>Republicans</title>
+    <title>Republicans</title>
 </head>
-<body style="background:#000">
-<div class="header"><h1> Pick a Republican to punch!</h1>
-</div>
+<body class="RepublicanPage" style="background:#000">
 
-<div class="content">
-    <div class="Republicans" >
+<div class="row" id="row">
+    <div class="col-xs-12">
+        <div class="header">
+            <div class="topnav">
+                <a href="settings.html" class="active" ><span >&#9881;</span></a>
+                <div id="myLinks">
+                    <a href="index.html">Home</a>
+                    <a href="login.html">Log In</a>
+                    <a href="account.html">Account</a>
+                    <a href="news.html">Latest News</a>
 
-
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="apptitle">
+                <h1> Political Punch!</h1>
+            </div>
+        </div>
     </div>
 </div>
-<div class="header"><h1> Pick a politician to punch!</h1>
-</div>
+
+
+    <div class="content">
+        <div class="Republicans" >
+
+
+        </div>
+    </div>
+        <div class="footer">
+            <h1> Punch A Republican </h1>
+    </div>
+<script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+            x.style.overflow = "visible";
+            x.style.position = "relative";
+
+
+          }
+        }
+    </script>
 </body>
 </html>
