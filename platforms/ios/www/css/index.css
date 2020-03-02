@@ -1,31 +1,8 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
 /*  Fonts */
-
- @font-face {
- font-family: HaleysHand;
- src: url(../webfonts/HaleysHand-Regular.ttf);
- }
 
  @font-face {
  font-family: HaleysHand;
@@ -49,7 +26,7 @@
  }
  @font-face {
  font-family: CYBEI__;
- src: url(../webfonts/CYBEI__.ttf);
+ src: url(../webfonts/CYBEI__.TTF);
  }
  @font-face {
  font-family: KrazyKool-Normal;
@@ -74,10 +51,6 @@
 
 
 /*side nav 2 */
-
-
-
-
 
 .topnav {
   overflow: hidden;
@@ -150,7 +123,7 @@ body {
     -webkit-text-size-adjust: text;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background: linear-gradient(#A7A7A7 0%, #E4E4E4 51%);
     font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
     font-size:12px;
     height:100vh;
@@ -299,34 +272,32 @@ width:25vw;
     background:url(../img/Donkey.jpg) no-repeat left top;
     background-size:contain;
     /* padding-left:25%; */
-    width:100%;
-    height:100%;/* 170px x 200px */
+
+    /* 170px x 200px */
 
 #row2 {
-  width:100vw;
-  height:70vh;
-  background-color: rgba(255,0,255,1);
+
   overflow:hidden;
 }
 
 .Dem {
-  width:50vw;
+  width:51.25vw;
   height:100%;
   flex: 1 1 auto;
-  background:url(../img/Bernie.png) no-repeat  center;
+  background:url(../img/Pelosi_Idle_01_5.gif) no-repeat  center;
   background-position: center center;
-  background-color: rgba(0,0,255,.6);
+  background-color: rgba(0,0,255,.1);
   background-size:cover;/* 170px x 200px */
-
 
 }
 
 .Rep{
-  width:50vw;
+  width:51.25vw;
   height:100%;
   flex: 1 1 auto;
-  background:url(../img/Trumpu.png) no-repeat  center;
+  background:url(../img/Trump_Idle_1.gif) no-repeat  center;
   background-position: center center;
+  background-color: rgba(255,0,0,.1);
   background-size:cover;/* 170px x 200px */
 
 
@@ -334,9 +305,9 @@ width:25vw;
 
 #col1 {
 
-  background: repeating-linear-gradient(rgba(113, 140, 237, 1), rgb(117, 58, 136, 1) 2%, #ff5e7c 1%);
+  /* background: repeating-linear-gradient(rgba(113, 140, 237, 1), rgb(117, 58, 136, 1) 2%, #ff5e7c 1%); */
   border-style: none;
-  width:50vw;
+  width:51.25vw;
   height:70vh;
   padding:0px;
   overflow:hidden;
@@ -344,10 +315,9 @@ width:25vw;
 }
 
 #col2 {
-   background: repeating-linear-gradient(rgba(237,50,53,1), rgba(186,58,41,1) 1%, rgba(255, 34, 14, 1) 2%);
-   background-color: rgba(255,0,0,.6);
+   /* background: repeating-linear-gradient(rgba(237,50,53,1), rgba(186,58,41,1) 1%, rgba(255, 34, 14, 1) 2%); */
    border-style: none;
-   width:50vw;
+   width:51.25vw;
    height:70vh;
    padding:0px;
    overflow:hidden;
@@ -411,7 +381,9 @@ width:25vw;
 .content {
  width:100vw;
  height:70vh;
- overflow-:hidden;
+ overflow:hidden;
+ background:url(../img/PP_Home_BG.png) no-repeat right top;
+ background-size:contain;/* 170px x 200px */
 
 }
 
@@ -420,12 +392,10 @@ width:25vw;
   width:40vw;
   height:20vh;
   padding:100%;
-
-
 }
 
     /* offset vertical: half of image height and text area height */
-/* offset horizontal: half of text area width */}
+/* offset horizontal: half of text area width */
 
 #img2 {
     background:url(../img/Elephant.jpg) no-repeat right top;
@@ -462,9 +432,18 @@ h1 {
     padding:0;
     text-align:center;
     font-weight: bold;
-    font-family: KrazyKool-Normal;
+    font-family: Captain-Howdy-Regular;
 }
-
+#index_header {
+  font-size:6vw;
+  font-weight:bold;
+  margin:0;
+  overflow:hidden;
+  padding:0;
+  text-align:center;
+  font-weight: bold;
+  font-family: Captain-Howdy-Regular;
+}
 .event {
     border-radius:4px;
     -webkit-border-radius:4px;
@@ -505,7 +484,7 @@ h1 {
 /* Democrat.html */
 
 .Democrats {
-     background:url(../img/Bernie.png) no-repeat  center;
+     background:url(../img/Pelosi_Idle_01_2.gif) no-repeat  center;
      background-position: bottom;
      background-size:cover;/* 170px x 200px */
      border-style: groove;
@@ -542,10 +521,15 @@ position:absolute;
 color:black;
 background:url(../img/Elephant.jpg);
 }
+
+/* End Democrat.html */
+
+
+
 /* Republican.html */
 
 .Republicans {
-     background:url(../img/Trumpu.png) no-repeat  center;
+     background:url(../img/Trump_Idle_1.gif) no-repeat  center;
      background-position: center;
      background-size:cover;/* 170px x 200px */
      border-style: groove;
@@ -584,8 +568,58 @@ position:absolute;
 color:black;
 background:url(../img/Elephant.jpg);
 }
+/* End Republican.html */
 
-/* Settings.html */
+
+
+/* login.html */
+
+#loginrow {
+width:100%;
+height:70vh;
+margin:0;
+font-size: 7vw;
+background-image: radial-gradient(rgba(3,42,111,.1), rgba(34,44,2,.5));
+}
+#logincontent {
+background-image: linear-gradient(red, yellow);
+}
+/* End login.html */
+
+
+
+
+/* news.html */
+#newsrow {
+width:100%;
+height:70vh;
+margin:0;
+font-size: 7vw;
+background-image: radial-gradient(rgba(3,42,111,.1), rgba(34,44,2,.5));
+}
+#newscontent {
+background-image: linear-gradient(red, yellow);
+}
+/* End news.html */
+
+
+
+
+/* account.html */
+#accountrow {
+width:100%;
+height:70vh;
+margin:0;
+font-size: 7vw;
+background-image: radial-gradient(rgba(3,42,111,.1), rgba(34,44,2,.5));
+}
+#accountcontent {
+background-image: linear-gradient(red, yellow);
+}
+/* End account.html */
+
+
+/* settings.html */
 #settingsrow {
 width:100%;
 height:70vh;
@@ -629,3 +663,4 @@ background-image: linear-gradient(red, yellow);
   opacity: 1;
   transition: 0s
 }
+/* End Settings.html */

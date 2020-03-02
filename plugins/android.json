@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.punchyourpolitician.politicalpunch"
+    },
+    "cordova-plugin-splashscreen-greetgo": {
+      "PACKAGE_NAME": "com.punchyourpolitician.politicalpunch"
     }
   },
   "dependent_plugins": {}

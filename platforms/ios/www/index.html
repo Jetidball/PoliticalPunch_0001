@@ -15,11 +15,30 @@
         <link rel="stylesheet" type="text/css" href="css/v4-shims.min.css">
         <link rel="stylesheet" type="text/css" href="css/regular.min.css">
 
+        <!-- Start Open Web Analytics Tracker -->
+       ` <script type="text/javascript">
+        //<![CDATA[
+          var owa_baseUrl = 'https://epicloot.us/OWA/';
+          var owa_cmds = owa_cmds || [];
+          owa_cmds.push(['setSiteId', 'e68abd5265902805d3f5bb8c9dd9ee40']);
+          owa_cmds.push(['trackPageView']);
+          owa_cmds.push(['trackClicks']);
+
+          (function() {
+          var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+          owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+          _owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+          var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+          }());
+          //]]>
+        </script>
+        <!-- End Open Web Analytics Code -->
 
         <!--<script src="jquery-2.1.4.js"></script>-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <!--<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>-->
+
 
 
         <title>Political Punch</title>
@@ -43,18 +62,28 @@
                 <a href="login.html">Log In</a>
                 <a href="account.html">Account</a>
                 <a href="news.html">Latest News</a>
+            </div>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="img/fafabars.png" />
+                </a>
 
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-            <a href="settings.html" class="active" ><span >&#9881;</span></a>
-        </div>
+            <div class ="row">
+              <div class="pull-left">
+              </div>
+              <div class="pull-right">
+                  <a href="settings.html" class="active" ><img src="img/gear_blue.png" /></a>
+              </div>
+            </div>
+            </div>
+
+
         <div class="apptitle">
             <h1> Political Punch!</h1>
         </div>
         <div class="banner">
-            <h1 style="margin:0px;">CHOOSE YOUR VICTIM</h1>
+            <h1 style="margin:0px;">CHOOSE A POLITICIAN</h1>
         </div>
     </div>
       </div>
@@ -95,10 +124,10 @@
     <div class="footer">
         <div class="row">
             <div class="col-xs-3 col-xs-offset-1">
-                <button class ="indexbutton" id="Democrat" onclick="setTimeout(function(){location.href='Democrat.html'}, 500)"><img src="img/DemocratButton.png" id="DButton"></button>
+                <button class ="indexbutton" id="Democrat" onclick="setTimeout(function(){location.href='Democrat.html'}, 300)"><img src="img/DemocratButton.png" id="DButton"></button>
             </div>
             <div class="col-xs-3 col-xs-offset-3">
-                <button class ="indexbutton" id="Republican" onclick="setTimeout(function(){location.href='Republican.html'}, 500);"><img src="img/RepublicanButton.png" id="DButton"> </button>
+                <button class ="indexbutton" id="Republican" onclick="setTimeout(function(){location.href='Republican.html'}, 300);"><img src="img/RepublicanButton.png" id="DButton"> </button>
             </div>
         </div>
 

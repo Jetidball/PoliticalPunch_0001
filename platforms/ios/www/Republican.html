@@ -20,6 +20,25 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!--<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>-->
 
+    <!-- Start Open Web Analytics Tracker -->
+    <script type="text/javascript">
+      //<![CDATA[
+      var owa_baseUrl = 'https://epicloot.us/OWA/';
+      var owa_cmds = owa_cmds || [];
+      owa_cmds.push(['setSiteId', 'e68abd5265902805d3f5bb8c9dd9ee40']);
+      owa_cmds.push(['trackPageView']);
+      owa_cmds.push(['trackClicks']);
+
+      (function() {
+      var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+      owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+      _owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+      var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+      }());
+      //]]>
+    </script>
+    <!-- End Open Web Analytics Code -->
+
 
     <title>Republicans</title>
 </head>
@@ -50,9 +69,34 @@
 
 
     <div class="content">
-        <div class="Republicans" >
+        <div class="Republicans" id="Republicans" onclick="punchtrump()">
+          <script>
+              function punchtrump() {
+                  let  x = document.getElementById("Republicans");
+                  x.style.backgroundImage="url('../img/Trump_HeavySlap_5.gif')";
+              }
+              function idle() {
+                let  x = document.getElementById("Republicans");
+                x.style.backgroundImage="url('../img/Trump_Idle_1.gif')";
+              }
+              window.onload = function() {
+                idol2();
+                //document.getElementById("Republicans").onclick = function fun() {
+                //punchtrump();
+              //}
+            }
+              function idol2() {
+                setInterval(function(){
+                  let  x = document.getElementById("Republicans");
+                  x.style.backgroundImage="url('../img/Trump_Idle_1.gif')";
+                }, 1000);
+              }
+                // document.getElementById("Republicans").onclick = function fun2() {
+                //   let  x = document.getElementById("Republicans");
+                //   idle();
 
 
+          </script>
         </div>
     </div>
         <div class="footer">

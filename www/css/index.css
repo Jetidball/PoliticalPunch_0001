@@ -139,7 +139,7 @@ src: url(../webfonts/fa-solid-900.ttf);
   margin:0;
 }
 
-.active span{
+.active .sp{
   background-color: rgba(0,50,0,0.1);
   right:0;
   top:0;
@@ -147,7 +147,7 @@ src: url(../webfonts/fa-solid-900.ttf);
   position:fixed;
   font-size:10vw;
   margin-top:-1.5vh;
-  color:rgba(209, 209, 224, 1)
+  color:rgba(209, 209, 224, 1);
 
 }
 /* Side Nav Menu */
