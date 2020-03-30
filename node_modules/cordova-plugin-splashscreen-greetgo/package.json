@@ -1,0 +1,87 @@
+{
+  "_from": "cordova-plugin-splashscreen-greetgo",
+  "_id": "cordova-plugin-splashscreen-greetgo@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-gCCJqrSW/ezICoCCn1kA5ADI9OTGO7y5UN0GO4lY2IgFF8TwpviZ5OKuewaTMMy9DjkLkgMEGd2pPVjvKybxbg==",
+  "_location": "/cordova-plugin-splashscreen-greetgo",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-splashscreen-greetgo",
+    "name": "cordova-plugin-splashscreen-greetgo",
+    "escapedName": "cordova-plugin-splashscreen-greetgo",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-splashscreen-greetgo/-/cordova-plugin-splashscreen-greetgo-1.0.2.tgz",
+  "_shasum": "b239c9ac59ee55344d58b6b7d2bcac36c290fa4f",
+  "_spec": "cordova-plugin-splashscreen-greetgo",
+  "_where": "/Users/johntidball/Desktop/PP_V_0003/PoliticalPunch_0001",
+  "author": {
+    "name": "flinkcstou"
+  },
+  "bugs": {
+    "url": "https://github.com/flinkcstou/cordova-plugin-splashscreen-greetgo/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-splashscreen-greetgo",
+    "platforms": [
+      "android",
+      "ubuntu",
+      "ios",
+      "windows",
+      "browser"
+    ]
+  },
+  "deprecated": false,
+  "description": "--- title: Splashscreen description: Control the splash screen for your app. --- <!-- # license: Licensed to the Apache Software Foundation (ASF) under one #         or more contributor license agreements.  See the NOTICE file #         distributed with this work for additional information #         regarding copyright ownership.  The ASF licenses this file #         to you under the Apache License, Version 2.0 (the #         \"License\"); you may not use this file except in compliance #         with the License.  You may obtain a copy of the License at # #           http://www.apache.org/licenses/LICENSE-2.0 # #         Unless required by applicable law or agreed to in writing, #         software distributed under the License is distributed on an #         \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY #         KIND, either express or implied.  See the License for the #         specific language governing permissions and limitations #         under the License. -->",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "2.0.0": {
+        "cordova-android": ">=3.6.0"
+      },
+      "4.0.0": {
+        "cordova-android": ">=3.6.0",
+        "cordova-windows": ">=4.4.0"
+      },
+      "6.0.0": {
+        "cordova": ">100"
+      }
+    },
+    "node": ">=6.0.0"
+  },
+  "homepage": "https://github.com/flinkcstou/cordova-plugin-splashscreen-greetgo#readme",
+  "keywords": [
+    "cordova",
+    "splashscreen",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-windows"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-splashscreen-greetgo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flinkcstou/cordova-plugin-splashscreen-greetgo.git"
+  },
+  "scripts": {
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests",
+    "test": "npm run jshint"
+  },
+  "types": "./types/index.d.ts",
+  "version": "1.0.2"
+}
